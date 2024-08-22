@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./block-css.css">
+</head>
+<nav>
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li>
+            <a href="#">Content</a>
+            <ul class="sub-menu">
+                <li><a href="#">Sub1</a></li>
+                <li><a href="#">Sub2</a></li>
+                <li><a href="#">Sub3</a></li>
+            </ul>
+        </li>
+        <li><a href="#" onclick="testSearch()">Contact</a></li>
+        <li><a href="#">Help</a></li>
+    </ul>
+</nav>
+
+<body>
+    <div class="box-class">
+        <div class="container">
+            <div class="box-content">
+                <div class="class-item1">
+                    <div class="box1">
+                        <h2 id="hvn"></h2>
+                    </div>
+                    <div class="box2">
+                        <div class="item">it1</div>
+                        <div class="item">it2</div>
+                        <div class="item">it3</div>
+                        <div class="item">it4</div>
+                    </div>
+                </div>
+                <div class="class-item2">
+                    Box2
+                </div>
+            </div>
+
+            <div class="paragraph">
+                <div class="p1">
+                    Hahahah
+                </div>
+                <div class="p2">
+                    hihih
+                </div>
+            </div>
+        </div>
+        <div class="box-item-flex">
+            <div class="item-flex">The flash</div>
+            <div class="item-flex">The flash</div>
+            <div class="item-flex">The flash</div>
+            <div class="item-flex">The flash</div>
+        </div>
+    </div>
+</body>
+<script>
+    function testSearch() {
+        var confirm = window.confirm("Chuyển sang 1 trang web khác")
+        if (confirm) {
+            window.open(`https://www.facebook.com/truongle204`)
+        } else {
+            alert("Bạn vừa bỏ lỡ cơ hội gặp trai đẹp")
+        }
+    }
+
+    function updateTime() {
+        var today = new Date();
+        var date = today.getDate().toString().padStart(2, '0') + '-' + (today.getMonth() + 1).toString().padStart(2, '0') + '-' + today.getFullYear();
+
+        // Sử dụng padStart để đảm bảo rằng giờ, phút và giây luôn có 2 chữ số
+        var hours = today.getHours().toString().padStart(2, '0');
+        var minutes = today.getMinutes().toString().padStart(2, '0');
+        var seconds = today.getSeconds().toString().padStart(2, '0');
+
+        var time = hours + ":" + minutes + ":" + seconds;
+        var dateTime = date + ' ' + time;
+
+        document.getElementById("hvn").innerHTML = dateTime;
+    }
+
+    setInterval(updateTime, 1000);
+
+    updateTime();
+
+</script>
+
+</html>
