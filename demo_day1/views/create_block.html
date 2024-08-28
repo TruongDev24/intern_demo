@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./block-css.css">
+    <link rel="stylesheet" href="../font2.css">
+    <link rel="stylesheet" href="../css/fontello.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
 </head>
+<header>
+    <div class="container-header">
+        <img src="../Img/anh0.jpg" alt="">
+        <div class="right-header">
+            <a href="#">Đăng kí</a> | <a href="#">Đăng nhập</a>
+        </div>
+    </div>
+</header>
 <nav>
     <ul class="menu">
         <li><a href="#">Home</a></li>
@@ -29,11 +40,12 @@
             <div class="box-content">
                 <div class="class-item1">
                     <div class="box1">
-                        <!-- <h2 id="hvn"></h2> -->
+                        <h2 id="hvn"></h2>
                         <a href="#img">
                             <img src="../Img/1.jpg" alt="image">
                         </a>
-                        <h3><a href="#title">hahahỳhvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvah</a></h3>
+                        <h3><a href="#title">hahahỳhvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvah</a>
+                        </h3>
                     </div>
                     <div class="box2">
                         <div class="item">it1</div>
@@ -49,20 +61,68 @@
 
             <div class="paragraph">
                 <div class="p1">
-                    Hahahah
+                    <p>Bãi bỏ Thông tư liên tịch số 32/2000/TTLT-BTC-BVHTT ngày 26 tháng 4 năm 2000 của liên Bộ Tài
+                        chính
+                        và Bộ Văn hóa - Thông tin hướng dẫn chế độ quản lý tài chính đói với các cơ sở ngoài công lập
+                        hoạt
+                        động trong lĩnh vực văn hóa
+                    </p>
                 </div>
                 <div class="p2">
                     hihih
+                    <!-- <i class="icon-mail-alt"></i> -->
                 </div>
             </div>
         </div>
-        <div class="box-item-flex">
-            <div class="item-flex">The flash</div>
-            <div class="item-flex">The flash</div>
-            <div class="item-flex">The flash</div>
-            <div class="item-flex">The flash</div>
+        <div style="background-color: white; text-align: center;">
+            <!-- <button id="but" style="padding: 10px 20px;" onclick="changeClass()">Table</button> -->
+            <input style="padding: 10px 20px;" onclick="changeClass()" type="button" name="" value="List" id="but">
         </div>
+        <div class="box-item-flex" id="box-item-flex">
+            <div class="item-flex">
+                <div class="photo">
+                    <img src="../Img/img1.jpg" alt="">
+                    <i class="icon"></i>
+                </div>
+                <div class="info">
+                    <h3>product 1</h3>
+                    <p>abdfhbaksfdbnkajsndfkanskjdnak</p>
+                </div>
+            </div>
+            <div class="item-flex">
+                <div class="photo">
+                    <img src="../Img/img1.jpg" alt="">
+                    <i class="icon"></i>
+                </div>
+                <div class="info">
+                    <h3>product 2</h3>
+                    <p>abdfhbaksfdbnkajsndfkanskjdnak</p>
+                </div>
+            </div>
+            <div class="item-flex">
+                <div class="photo">
+                    <img src="../Img/img1.jpg" alt="">
+                    <i class="icon"></i>
+                </div>
+                <div class="info">
+                    <h3>product 3</h3>
+                    <p>abdfhbaksfdbnkajsndfkanskjdnak</p>
+                </div>
+            </div>
+            <div class="item-flex">
+                <div class="photo">
+                    <img src="../Img/img1.jpg" alt="">
+                    <i class="icon"></i>
+                </div>
+                <div class="info">
+                    <h3>product 4</h3>
+                    <p>abdfhbaksfdbnkajsfkanskj school</p>
+                </div>
+            </div>
+        </div>
+
     </div>
+    <a href="#" class="icon-backtop"></a>
 </body>
 <script>
     function testSearch() {
@@ -93,6 +153,17 @@
 
     updateTime();
 
-</script>
+    function changeClass() {
+        var element = document.getElementById("box-item-flex");
+        element.classList.toggle('box-item-flex2')
 
+        var butName = document.getElementById('but');
+
+        if (element.classList.contains('box-item-flex2')) {
+            butName.setAttribute('value', "Grid");
+        } else {
+            butName.setAttribute('value', "List");
+        }
+    }
+</script>
 </html>
