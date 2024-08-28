@@ -596,7 +596,8 @@ h1 {
 
 .section h3 {
     font-size: 17px;
-    margin: 0 0;
+    margin: 0;
+    margin-bottom: 5px;
 }
 
 .section img {
@@ -669,13 +670,14 @@ h1 {
     font-size: 100px;
     color: red;
     margin: 180px -470px;
+    opacity: 0.6;
     /* top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
 }
 
 .left-detail .icon-youtube-play:hover {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .row {
@@ -690,6 +692,10 @@ h1 {
 
 .col {
     flex-basis: 23%;
+}
+
+.information-content1 {
+    margin-top: 50px;
 }
 
 .information h3 {
