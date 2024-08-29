@@ -1,5 +1,4 @@
-@media (max-width: 1920px) {
-
+@media (min-width: 768px) and (max-width: 991px) {
     :root {
         --color-top: #f4f4f4;
         --color-body: #ffffff;
@@ -14,7 +13,7 @@
 
     .header {
         background-color: var(--color-top);
-        padding: 10px 375px;
+        padding: 10px 10px;
         display: flex;
         justify-content: space-between;
         /* align-items: center; */
@@ -43,25 +42,30 @@
     }
 
     .banner_logo {
-        padding: 10px 375px;
+        padding: 10px 10px;
     }
 
     .top {
         display: flex;
+        padding: 0 10px;
     }
 
     .logo {
         margin: auto auto auto 0;
     }
 
-    /* .ad img{
-    max-width: 100%;
-    float: right;
-} */
+    .logo img {
+        width: 100%;
+    }
+
+    .ad img {
+        width: 95%;
+        float: right;
+    }
 
     nav {
         background-color: #e74c3c;
-        padding: 0 335px;
+        padding: 0 0;
         /* position: sticky;
     z-index: 99;
     top: 0; */
@@ -69,12 +73,12 @@
 
     .menu {
         display: flex;
-        margin: 0;
+        margin: 0 -33px;
     }
 
     .menu li {
         display: inline-block;
-        padding: 15px 17px;
+        padding: 15px 15px;
         color: #ffffff;
         font-size: 13px;
     }
@@ -85,12 +89,16 @@
     }
 
     .banner h3 {
-        font-size: 45px;
+        font-size: 25px;
         position: absolute;
         z-index: 1;
         top: 0;
-        margin: 75px 850px;
+        margin: 30px 350px;
         color: #ffffff;
+    }
+
+    .banner img {
+        width: 100%;
     }
 
     .banner {
@@ -98,12 +106,12 @@
     }
 
     .banner .page {
-        width: 58.5%;
+        width: 70%;
         background-color: #f4f4f4;
         position: absolute;
         bottom: 0;
         z-index: 1;
-        margin: -20px 375px;
+        margin: -30px 100px;
         line-height: 50px;
         padding: 0 20px;
     }
@@ -116,15 +124,15 @@
         margin: auto;
         text-align: start;
         color: black;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     h1 {
-        font-size: 29px;
+        font-size: 24px;
     }
 
     .container {
-        padding: 0 375px;
+        padding: 0 10px;
         display: flex;
         margin-top: 40px;
     }
@@ -147,15 +155,21 @@
     }
 
     .time h2 {
-        margin: 0 10px 0 240px;
+        margin: 0 10px 0 0;
         margin-top: 0;
         font-size: 16px;
     }
 
     .time .icon-print {
-        margin-left: 40px;
+        margin-left: 10px;
         opacity: 0.4;
         color: black;
+    }
+
+    @media screen and (width: 768px) {
+        .time .icon-print {
+            display: none;
+        }
     }
 
     .icon-chat,
@@ -164,23 +178,23 @@
     }
 
     .left-container {
-        width: 70%;
+        width: 65%;
     }
 
     .right-container {
         /* float: right; */
-        width: 30%;
+        width: 35%;
     }
 
     .vertical-line {
         border-left: 2px solid black;
         min-height: 2400px;
-        margin: 20px 20px;
+        margin: 20px 10px;
         opacity: 0.3;
     }
 
     .right-container h3 {
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 0;
     }
 
@@ -206,7 +220,7 @@
     }
 
     .right-container p {
-        margin: 20px 0;
+        margin: 10px 0;
         overflow-wrap: break-word;
         word-break: break-word;
     }
@@ -235,7 +249,7 @@
 
     /* .more-info {
     margin-left: 0;
-} */
+    } */
 
     .news {
         list-style: none;
@@ -248,21 +262,22 @@
     }
 
     .number {
-        font-size: 40px;
+        font-size: 30px;
         opacity: 0.2;
         font-weight: bold;
+        margin: auto;
     }
 
     .space-line hr {
         border-left: 3px solid black;
-        min-height: 40px;
+        min-height: 50px;
         margin: 5px 10px;
         opacity: 0.2;
     }
 
     .title h3 {
         margin-top: 4px;
-        font-size: 16px;
+        font-size: 15px;
         color: #000;
         overflow-wrap: break-word;
         word-break: break-word;
@@ -280,12 +295,11 @@
     }
 
     .left-container .more {
-        margin: 40px 320px;
+        margin: 20px 180px;
         padding: 15px 0;
         text-align: center;
         cursor: pointer;
         background-color: #eeeeee;
-        margin-bottom: 15px;
     }
 
     .more a {
@@ -383,8 +397,8 @@
     }
 
     .area {
-        width: 97%;
-        height: 120px;
+        width: 96%;
+        height: 100px;
         padding: 10px 10px;
         font-size: 16px;
         opacity: 0.8;
@@ -395,10 +409,10 @@
     }
 
     .reply {
-        padding: 15px 20px;
+        padding: 10px 20px;
         background-color: #e74c3c;
         text-align: center;
-        margin-left: 650px;
+        margin-left: 400px;
         margin-top: 10px;
     }
 
@@ -516,6 +530,7 @@
 
     .title-category h2 {
         margin: 0;
+        font-size: 20px;
     }
 
     .title-category {
@@ -555,12 +570,12 @@
     }
 
     .content-law {
-        margin-top: 20px;
-        display: flex;
+        margin-top: 10px;
+        display: inline;
     }
 
     .left {
-        width: 50%;
+        width: 100%;
     }
 
     .left h3,
@@ -569,7 +584,7 @@
     }
 
     .left img {
-        width: 400px;
+        width: 100%;
     }
 
     .left span {
@@ -578,7 +593,8 @@
     }
 
     .right {
-        margin-left: 30px;
+        margin-top: 30px;
+        margin-left: 5px;
     }
 
     .section {
@@ -606,7 +622,7 @@
     }
 
     .main-content {
-        padding: 40px 375px;
+        padding: 40px 10px;
     }
 
     .icon-video i {
@@ -630,18 +646,23 @@
     }
 
     .left-detail img {
-        width: 850px;
+        width: 100%;
         position: relative;
     }
 
     .left-detail {
-        margin-right: 20px;
+        margin-bottom: 50px;
     }
 
     .right-detail p {
         font-weight: bold;
         margin-top: 5px;
         margin-bottom: 25px;
+    }
+
+    .right-detail img{
+        width: 100%;
+        /* margin-top: 20px; */
     }
 
     .right-detail i {
@@ -666,11 +687,11 @@
         z-index: 99;
         font-size: 100px;
         color: red;
-        margin: 180px -470px;
+        margin: 120px -350px;
         opacity: 0.6;
         /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+        left: 50%;
+        transform: translate(-50%, -50%); */
     }
 
     .left-detail .icon-youtube-play:hover {
@@ -679,25 +700,36 @@
 
     .row {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin-bottom: 20px;
+        flex-wrap: wrap;
     }
 
     .content3 {
-        padding: 40px 375px;
+        padding: 20px 5px;
+        width: 100%;
     }
 
     .col {
-        flex-basis: 23%;
+        flex-basis: 47%;
+        margin-top: 20px;
     }
 
     .information-content1 {
-        margin-top: 50px;
+        margin-top: 40px;
     }
 
     .information h3 {
         margin: 5px 0;
-        font-size: 16px;
+        font-size: 15px;
+    }
+
+    .information {
+        padding-right: 10px;
+    }
+
+    .information img {
+        width: 100%;
     }
 
     .list-answer {
@@ -715,11 +747,11 @@
     }
 
     footer {
-        width: 1920px;
+        width: 100%;
     }
 
     .foot1 {
-        padding: 0 375px;
+        padding: 0 15px;
         background-color: #444444;
         height: 55px;
         display: flex;
@@ -774,7 +806,7 @@
     }
 
     .icon-footer-share i {
-        font-size: 35px;
+        font-size: 30px;
     }
 
 
@@ -784,7 +816,7 @@
     }
 
     .bg-red {
-        height: 315px;
+        height: 120%;
         width: 35%;
         background-color: #c73324;
         background-image:
@@ -799,13 +831,13 @@
             linear-gradient(90deg, rgba(202, 200, 200, 0.1) 3px, transparent 3px),
             linear-gradient(rgba(202, 199, 199, 0.1) 5px, transparent 5px);
         background-size: 8px 8px;
-        height: 315px;
+        height: 120%;
         width: 65%;
     }
 
     .text-footer {
         color: white;
-        margin-left: 375px;
+        margin-left: 10px;
         margin-right: 15px;
     }
 
@@ -821,7 +853,7 @@
     }
 
     .category-footer {
-        margin-right: 375px;
+        margin-right: 10px;
         padding: 10px 30px;
     }
 
